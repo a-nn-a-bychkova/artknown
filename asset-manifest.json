@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/artknown/static/css/main.ce7bec60.chunk.css",
+    "main.js": "/artknown/static/js/main.149dd19a.chunk.js",
+    "main.js.map": "/artknown/static/js/main.149dd19a.chunk.js.map",
+    "runtime-main.js": "/artknown/static/js/runtime-main.d82fec97.js",
+    "runtime-main.js.map": "/artknown/static/js/runtime-main.d82fec97.js.map",
+    "static/js/2.75d6d12b.chunk.js": "/artknown/static/js/2.75d6d12b.chunk.js",
+    "static/js/2.75d6d12b.chunk.js.map": "/artknown/static/js/2.75d6d12b.chunk.js.map",
+    "static/js/3.5b2826cd.chunk.js": "/artknown/static/js/3.5b2826cd.chunk.js",
+    "static/js/3.5b2826cd.chunk.js.map": "/artknown/static/js/3.5b2826cd.chunk.js.map",
+    "index.html": "/artknown/index.html",
+    "static/css/main.ce7bec60.chunk.css.map": "/artknown/static/css/main.ce7bec60.chunk.css.map",
+    "static/js/2.75d6d12b.chunk.js.LICENSE.txt": "/artknown/static/js/2.75d6d12b.chunk.js.LICENSE.txt",
+    "static/media/Fazenda-1-05-2021.4cbfb7f8.jpg": "/artknown/static/media/Fazenda-1-05-2021.4cbfb7f8.jpg",
+    "static/media/Heisenberg-14-02-2021.46262b00.jpg": "/artknown/static/media/Heisenberg-14-02-2021.46262b00.jpg",
+    "static/media/artknown.b695d7ee.jpg": "/artknown/static/media/artknown.b695d7ee.jpg",
+    "static/media/example-image.fcd7c817.jpg": "/artknown/static/media/example-image.fcd7c817.jpg",
+    "static/media/schoolpub-28-05-2021.56737d17.jpg": "/artknown/static/media/schoolpub-28-05-2021.56737d17.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d82fec97.js",
+    "static/js/2.75d6d12b.chunk.js",
+    "static/css/main.ce7bec60.chunk.css",
+    "static/js/main.149dd19a.chunk.js"
+  ]
+}
