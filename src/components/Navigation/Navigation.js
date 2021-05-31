@@ -24,12 +24,7 @@ const styles = {
 const Navigation = () => {
   return (
     <nav style={styles.nav}>
-      <NavLink
-        to="/home"
-        exact
-        style={styles.link}
-        activeStyle={styles.activeLink}
-      >
+      <NavLink to="/" exact style={styles.link} activeStyle={styles.activeLink}>
         <img src={Logo} alt="ARTKNOWN UNTIST" />
       </NavLink>
       <NavLink
