@@ -23,9 +23,9 @@ export default function ContactInfoView() {
         </li>
       </ul>
       <div className={s.ContactsContainer}>
-        <a href="mailto:a.a.bychkova@gmail.com" className={s.Contacts}>
+        <a href="mailto:artknownuntist@gmail.com" className={s.Contacts}>
           <Mail className={s.ContactsIcon} />
-          a.a.bychkova@gmail.com
+          artknownuntist@gmail.com
         </a>
         <a href="tel:+380995668767" className={s.Contacts}>
           <Phone className={s.ContactsIcon} />
