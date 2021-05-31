@@ -5,8 +5,8 @@ import artknown from '../images/artknown.jpg';
 export default function HomeView() {
   return (
     <Container>
-      {/* <h1 className={s.Name}>artknown antist</h1> */}
-      <img src={artknown} alt="ARTKNOWN ANTIST" />
+      {/* <h1 className={s.Name}>artknown untist</h1> */}
+      <img src={artknown} alt="ARTKNOWN UNTIST" />
     </Container>
   );
 }

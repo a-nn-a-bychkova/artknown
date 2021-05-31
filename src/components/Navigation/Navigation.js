@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import s from './Navigation.module.css';
-import Logo from '../../images/Logo-artknown.png';
+import Logo from '../../images/Logo-artknown.PNG';
 
 const styles = {
   nav: {
@@ -14,9 +14,10 @@ const styles = {
     padding: 12,
     fontWeight: 700,
     color: '#2A363B',
+    ':hover': { background: '#008080' },
   },
   activeLink: {
-    color: '#BDB76B',
+    color: '#008080',
   },
 };
 
@@ -29,7 +30,7 @@ const Navigation = () => {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        <img src={Logo} alt="ARTKNOWN ANTIST" />
+        <img src={Logo} alt="ARTKNOWN UNTIST" />
       </NavLink>
       <NavLink
         to="/events"
@@ -37,7 +38,7 @@ const Navigation = () => {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        <span className={s.Text}>События</span>
+        <span className={s.Text}>Events</span>
       </NavLink>
       <NavLink
         to="/gallery"
@@ -45,7 +46,7 @@ const Navigation = () => {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        <span className={s.Text}>Галерея</span>
+        <span className={s.Text}>Gallery</span>
       </NavLink>
       <NavLink
         to="/contact-info"
@@ -53,7 +54,7 @@ const Navigation = () => {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        <span className={s.Text}>Контакты</span>
+        <span className={s.Text}>Contacts</span>
       </NavLink>
     </nav>
   );

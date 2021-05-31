@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+.Name {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .GalleryContainer {
   display: flex;
   justify-content: space-between;
@@ -8,4 +14,44 @@
 .Image {
   width: 100%;
   margin: 0px;
+}
+
+.ContactsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contacts {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  margin-top: 15px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+.li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.Icon:hover,
+.Icon:focus,
+.Contacts:hover,
+.Contacts:focus,
+.ContactsIcon:hover,
+.ContactsIcon:focus {
+  color: teal;
+  transition: 1s;
+}
+
+.Icon {
+  color: grey;
+}
+
+.ContactsIcon {
+  margin-right: 10px;
+  color: grey;
 }
