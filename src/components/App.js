@@ -10,7 +10,7 @@ export default function App() {
     <Container>
       <AppBar />
       <Switch>
-        <Route path="/">
+        <Route path="/home">
           <HomeView />
         </Route>
         <Route path="/events">
