@@ -5,6 +5,8 @@ import HomeView from '../views/HomeView';
 import EventsView from '../views/EventsView';
 import ContactInfoView from '../views/ContactInfoView';
 import GalleryView from '../views/GalleryView';
+import Footer from './Footer';
+
 export default function App() {
   return (
     <Container>
@@ -23,6 +25,7 @@ export default function App() {
           <ContactInfoView />
         </Route>
       </Switch>
+      {/* <Footer /> */}
     </Container>
   );
 }

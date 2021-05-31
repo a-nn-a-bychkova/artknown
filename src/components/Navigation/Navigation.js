@@ -7,6 +7,7 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
+    paddingRight: '15px',
   },
   link: {
     display: 'inline-block',

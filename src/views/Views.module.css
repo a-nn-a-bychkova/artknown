@@ -16,14 +16,25 @@
   margin: 0px;
 }
 
+/* ContactInfoView */
+
+.li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
 .ContactsContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.SocialMediaContainer {
+  display: flex;
+  justify-content: center;
+}
 
-.Contacts {
+.ContactsLink {
   font-family: 'Big Shoulders Display';
   font-weight: 700;
   margin-top: 15px;
@@ -32,23 +43,22 @@
   text-decoration: none;
 }
 
-.li {
-  list-style-type: none;
-  margin-top: 15px;
-}
-
 .Icon:hover,
 .Icon:focus,
-.Contacts:hover,
-.Contacts:focus,
-.ContactsIcon:hover,
-.ContactsIcon:focus {
+.ContactsLink:hover,
+.ContactsLink:focus {
   color: teal;
   transition: 1s;
 }
 
+.ContactsIcon:hover,
+.ContactsIcon:focus {
+  color: inherit;
+}
+
 .Icon {
   color: grey;
+  margin-right: 10px;
 }
 
 .ContactsIcon {
