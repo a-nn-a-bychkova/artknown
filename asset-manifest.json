@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/artknown/static/css/main.08a4f00d.chunk.css",
-    "main.js": "/artknown/static/js/main.33b95a01.chunk.js",
-    "main.js.map": "/artknown/static/js/main.33b95a01.chunk.js.map",
-    "runtime-main.js": "/artknown/static/js/runtime-main.313b330c.js",
-    "runtime-main.js.map": "/artknown/static/js/runtime-main.313b330c.js.map",
-    "static/js/2.008e5128.chunk.js": "/artknown/static/js/2.008e5128.chunk.js",
-    "static/js/2.008e5128.chunk.js.map": "/artknown/static/js/2.008e5128.chunk.js.map",
-    "static/js/3.d23cafa3.chunk.js": "/artknown/static/js/3.d23cafa3.chunk.js",
-    "static/js/3.d23cafa3.chunk.js.map": "/artknown/static/js/3.d23cafa3.chunk.js.map",
+    "main.css": "/artknown/static/css/main.1376f611.chunk.css",
+    "main.js": "/artknown/static/js/main.7f5e5d17.chunk.js",
+    "main.js.map": "/artknown/static/js/main.7f5e5d17.chunk.js.map",
+    "runtime-main.js": "/artknown/static/js/runtime-main.eb09cd88.js",
+    "runtime-main.js.map": "/artknown/static/js/runtime-main.eb09cd88.js.map",
+    "static/js/2.3efb4a59.chunk.js": "/artknown/static/js/2.3efb4a59.chunk.js",
+    "static/js/2.3efb4a59.chunk.js.map": "/artknown/static/js/2.3efb4a59.chunk.js.map",
+    "static/js/3.222d6c01.chunk.js": "/artknown/static/js/3.222d6c01.chunk.js",
+    "static/js/3.222d6c01.chunk.js.map": "/artknown/static/js/3.222d6c01.chunk.js.map",
     "index.html": "/artknown/index.html",
-    "static/css/main.08a4f00d.chunk.css.map": "/artknown/static/css/main.08a4f00d.chunk.css.map",
-    "static/js/2.008e5128.chunk.js.LICENSE.txt": "/artknown/static/js/2.008e5128.chunk.js.LICENSE.txt",
+    "static/css/main.1376f611.chunk.css.map": "/artknown/static/css/main.1376f611.chunk.css.map",
+    "static/js/2.3efb4a59.chunk.js.LICENSE.txt": "/artknown/static/js/2.3efb4a59.chunk.js.LICENSE.txt",
     "static/media/Fazenda-1-05-2021.4cbfb7f8.jpg": "/artknown/static/media/Fazenda-1-05-2021.4cbfb7f8.jpg",
     "static/media/Heisenberg-14-02-2021.46262b00.jpg": "/artknown/static/media/Heisenberg-14-02-2021.46262b00.jpg",
     "static/media/Logo-artknown.63e0bca4.svg": "/artknown/static/media/Logo-artknown.63e0bca4.svg",
@@ -20,9 +20,9 @@
     "static/media/schoolpub-28-05-2021.56737d17.jpg": "/artknown/static/media/schoolpub-28-05-2021.56737d17.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.313b330c.js",
-    "static/js/2.008e5128.chunk.js",
-    "static/css/main.08a4f00d.chunk.css",
-    "static/js/main.33b95a01.chunk.js"
+    "static/js/runtime-main.eb09cd88.js",
+    "static/js/2.3efb4a59.chunk.js",
+    "static/css/main.1376f611.chunk.css",
+    "static/js/main.7f5e5d17.chunk.js"
   ]
 }
