@@ -1,0 +1,28 @@
+.Image {
+  width: 250px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.div {
+  display: block;
+  text-align: center;
+}
+
+.ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.li {
+  margin-top: 20px;
+  max-width: 250px;
+  list-style-type: none;
+  /* width: calc((100%-50px) / 3);
+  margin-right: 15px;
+  list-style-type: none; */
+}

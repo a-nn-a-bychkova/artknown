@@ -1,0 +1,55 @@
+.Name {
+  font-family: 'Big Shoulders Display';
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.ContactsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ContactsLink {
+  font-family: 'Big Shoulders Display';
+  font-weight: 700;
+  margin-top: 15px;
+  display: flex;
+  color: black;
+  text-decoration: none;
+}
+
+.ContactsLink:hover,
+.ContactsLink:focus {
+  color: teal;
+  transition: 1s;
+}
+.ContactsIcon {
+  margin-right: 10px;
+  color: grey;
+}
+.ContactsIcon:hover,
+.ContactsIcon:focus {
+  color: inherit;
+}
+
+.Icon {
+  color: grey;
+  margin-right: 10px;
+}
+.Icon:hover,
+.Icon:focus {
+  color: teal;
+  transition: 1s;
+}

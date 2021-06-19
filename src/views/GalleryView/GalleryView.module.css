@@ -1,0 +1,11 @@
+.List {
+  padding: 0;
+}
+
+.Item {
+  list-style-type: none;
+}
+
+.Img {
+  max-width: 300px;
+}
