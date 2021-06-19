@@ -1,6 +1,8 @@
 import Container from '../../components/Container';
 import s from './ContactsInfoView.module.css';
 import { Instagram, Facebook, Youtube, Mail, Phone } from 'react-feather';
+import { Icon, InlineIcon } from '@iconify/react';
+import soundcloudIcon from '@iconify-icons/mdi/soundcloud';
 
 export default function ContactInfoView() {
   return (
@@ -30,6 +32,11 @@ export default function ContactInfoView() {
         <li className={s.li}>
           <a href="https://youtube.com/channel/UCr-gXA_l6iFG-njz-ZghNhA">
             <Youtube className={s.Icon} />
+          </a>
+        </li>
+        <li className={s.li}>
+          <a href="https://soundcloud.com/artknown-untist/catcher">
+            <Icon icon={soundcloudIcon} color="grey" width="24" height="24" />
           </a>
         </li>
       </ul>

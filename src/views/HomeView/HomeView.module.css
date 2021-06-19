@@ -1,0 +1,9 @@
+.Hero {
+  margin-top: 20px;
+  max-width: 90%;
+}
+@media screen and (min-width: 480px) {
+  .Hero {
+    max-width: 100%;
+  }
+}

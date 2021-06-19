@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
+    "@iconify-icons/mdi": "^1.1.15",
+    "@iconify/react": "^1.1.4",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"
