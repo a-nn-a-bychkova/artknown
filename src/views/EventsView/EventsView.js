@@ -36,7 +36,7 @@ import heisenbergImage from '../../images/Heisenberg-14-02-2021.jpg';
 
 export default function EventsView() {
   return (
-    <Container>
+    <div>
       <ul className={s.ul}>
         <li className={s.li}>
           <img
@@ -59,7 +59,28 @@ export default function EventsView() {
             alt="Heisenberg 14.02.2021 poster"
           />
         </li>
+        <li className={s.li}>
+          <img
+            src={heisenbergImage}
+            className={s.Image}
+            alt="Heisenberg 14.02.2021 poster"
+          />
+        </li>
+        <li className={s.li}>
+          <img
+            src={heisenbergImage}
+            className={s.Image}
+            alt="Heisenberg 14.02.2021 poster"
+          />
+        </li>
+        <li className={s.li}>
+          <img
+            src={heisenbergImage}
+            className={s.Image}
+            alt="Heisenberg 14.02.2021 poster"
+          />
+        </li>
       </ul>
-    </Container>
+    </div>
   );
 }

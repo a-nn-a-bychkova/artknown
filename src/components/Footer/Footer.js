@@ -1,5 +1,5 @@
 import s from './Footer.module.css';
-import FooterView from '../../views/FooterView';
+import FooterView from '../../views/FooterView/FooterView';
 
 export default function Footer() {
   return (

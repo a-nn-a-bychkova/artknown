@@ -4,7 +4,7 @@ import s from './GalleryView.module.css';
 
 export default function GalleryView() {
   return (
-    <Container>
+    <div>
       <ul className={s.List}>
         <li className={s.Item}>
           <img src={example} alt="artknown" className={s.Img} />
@@ -37,6 +37,6 @@ export default function GalleryView() {
           <img src={example} alt="artknown" className={s.Img} />
         </li>
       </ul>
-    </Container>
+    </div>
   );
 }

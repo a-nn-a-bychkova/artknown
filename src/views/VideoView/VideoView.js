@@ -2,7 +2,7 @@ import Container from '../../components/Container';
 import s from './VideoView.module.css';
 export default function VideoView() {
   return (
-    <Container>
+    <div>
       <ul className={s.List}>
         <li className={s.Item}>
           <iframe
@@ -65,6 +65,6 @@ export default function VideoView() {
           ></iframe>
         </li>
       </ul>
-    </Container>
+    </div>
   );
 }

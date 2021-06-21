@@ -1,14 +1,13 @@
 import Container from '../../components/Container';
-import s from './ContactsInfoView.module.css';
+import s from './FooterView.module.css';
+
 import { Instagram, Facebook, Youtube, Mail, Phone } from 'react-feather';
 import { Icon, InlineIcon } from '@iconify/react';
 import soundcloudIcon from '@iconify-icons/mdi/soundcloud';
 
-export default function ContactInfoView() {
+export default function FooterView() {
   return (
-    <Container>
-      <h1 className={s.Name}>Contacts</h1>
-
+    <div>
       <div className={s.ContactsContainer}>
         <a href="mailto:artknownuntist@gmail.com" className={s.ContactsLink}>
           <Mail className={s.ContactsIcon} />
@@ -40,6 +39,6 @@ export default function ContactInfoView() {
           </a>
         </li>
       </ul>
-    </Container>
+    </div>
   );
 }

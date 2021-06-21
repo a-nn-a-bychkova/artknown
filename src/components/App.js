@@ -37,7 +37,7 @@ export default function App() {
           <HomeView />
         </Route>
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 }

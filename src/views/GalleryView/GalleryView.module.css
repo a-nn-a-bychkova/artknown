@@ -9,3 +9,30 @@
 .Img {
   max-width: 300px;
 }
+
+@media screen and (min-width: 480px) {
+  .List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Item {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .Item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Item {
+    margin-right: 15px;
+  }
+  .Item:nth-child(2n) {
+    margin-right: 15px;
+  }
+  .Item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}

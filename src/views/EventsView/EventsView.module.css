@@ -4,11 +4,6 @@
   margin-bottom: 15px;
 }
 
-.div {
-  display: block;
-  text-align: center;
-}
-
 .ul {
   width: 100%;
   display: flex;
@@ -22,9 +17,32 @@
   margin-top: 20px;
   max-width: 250px;
   list-style-type: none;
-  /* width: calc((100%-50px) / 3);
-  margin-right: 15px;
-  list-style-type: none; */
 }
 @media screen and (min-width: 480px) {
+  .ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+  }
+  .li {
+    width: 219px;
+  }
+
+  .Image {
+    width: 219px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ul {
+    justify-content: center;
+  }
+  .li {
+    margin-right: 10px;
+  }
+  .li:nth-child(4n) {
+    margin-right: 0px;
+  }
 }

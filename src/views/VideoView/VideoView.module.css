@@ -12,3 +12,25 @@
   width: 300px;
   height: 200px;
 }
+
+@media screen and (min-width: 480px) {
+  .List {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .Item {
+    margin-bottom: 15px;
+  }
+  .Item:nth-child(odd) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Item {
+    margin-right: 15px;
+  }
+  .Item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
