@@ -1,0 +1,2 @@
+(this.webpackJsonpartknown=this.webpackJsonpartknown||[]).push([[6],{70:function(e,n,t){e.exports={Hero:"HomeView_Hero__1RjaI",Name:"HomeView_Name__2OOTC"}},77:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return i}));var a=t(13),r=t(70),o=t.n(r),s=t.p+"static/media/artknown.b695d7ee.jpg",c=t(1);function i(){return Object(c.jsx)(a.a,{children:Object(c.jsx)("img",{src:s,alt:"ARTKNOWN UNTIST",className:o.a.Hero})})}}}]);
+//# sourceMappingURL=6.81d19e5c.chunk.js.map
