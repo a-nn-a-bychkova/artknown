@@ -1,13 +1,15 @@
+import { withRouter } from 'react-router-dom';
 import Container from '../../components/Container';
 import s from './ContactsInfoView.module.css';
 import { Instagram, Facebook, Youtube, Mail, Phone } from 'react-feather';
 import { Icon, InlineIcon } from '@iconify/react';
 import soundcloudIcon from '@iconify-icons/mdi/soundcloud';
 
-export default function ContactInfoView() {
+function ContactsInfoView(props) {
+  const shouldShowH1 = props.location.pathname === '/contact-info';
   return (
     <Container>
-      <h1 className={s.Name}>Contacts</h1>
+      {shouldShowH1 && <h1 className={s.Name}>Contacts</h1>}
 
       <div className={s.ContactsContainer}>
         <a href="mailto:artknownuntist@gmail.com" className={s.ContactsLink}>
@@ -43,3 +45,4 @@ export default function ContactInfoView() {
     </Container>
   );
 }
+export default withRouter(ContactsInfoView);

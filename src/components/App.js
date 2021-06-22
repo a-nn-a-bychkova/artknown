@@ -1,43 +1,50 @@
-import { Switch, Route } from 'react-router-dom';
-import { useContext, useEffect, useState } from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { useContext, useEffect, lazy, Suspense } from 'react';
 import Container from './Container';
 import AppBar from './AppBar';
-import HomeView from '../views/HomeView';
-import EventsView from '../views/EventsView';
-import ContactInfoView from '../views/ContactsInfoView/ContactInfoView';
-import GalleryView from '../views/GalleryView';
-import VideoView from '../views/VideoView';
-import Modal from '../components/Modal';
+// import Modal from '../components/Modal';
 import Footer from './Footer';
+import LoaderBlur from '../components/LoaderBlur';
 import Context from '../contexts/context';
 
-export default function App() {
+const HomeView = lazy(() => import('../views/HomeView'));
+const EventsView = lazy(() => import('../views/EventsView'));
+const GalleryView = lazy(() => import('../views/GalleryView'));
+const ContactsInfoView = lazy(() => import('../views/ContactsInfoView'));
+const VideoView = lazy(() => import('../views/VideoView'));
+const Modal = lazy(() => import('../components/Modal'));
+
+function App(props) {
   const { showModal } = useContext(Context);
+  const shouldShowFooter = props.location.pathname !== '/contact-info';
   useEffect(() => {
-    console.log(showModal);
+    console.log('App UseEffect');
   }, []);
   return (
     <Container>
       <AppBar />
       {showModal && <Modal />}
       <Switch>
-        <Route path="/events" exact>
-          <EventsView />
-        </Route>
-        <Route path="/gallery">
-          <GalleryView />
-        </Route>
-        <Route path="/video">
-          <VideoView />
-        </Route>
-        <Route path="/contact-info">
-          <ContactInfoView />
-        </Route>
-        <Route path="" exact>
-          <HomeView />
-        </Route>
+        <Suspense fallback={<LoaderBlur />}>
+          <Route path="/events" exact>
+            <EventsView />
+          </Route>
+          <Route path="/gallery">
+            <GalleryView />
+          </Route>
+          <Route path="/video">
+            <VideoView />
+          </Route>
+          <Route path="/contact-info">
+            <ContactsInfoView />
+          </Route>
+          <Route path="/" exact>
+            <HomeView />
+          </Route>
+        </Suspense>
       </Switch>
-      <Footer />
+      {shouldShowFooter && <Footer />}
     </Container>
   );
 }
+export default withRouter(App);

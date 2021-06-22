@@ -19,15 +19,16 @@
     flex-wrap: wrap;
   }
   .Item {
+    margin-right: 15px;
     margin-bottom: 15px;
   }
-  .Item:nth-child(odd) {
-    margin-right: 15px;
+  .Item:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .Item {
+  .Item:nth-child(2n) {
     margin-right: 15px;
   }
   .Item:nth-child(3n) {
