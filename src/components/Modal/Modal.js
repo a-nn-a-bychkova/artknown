@@ -4,7 +4,7 @@ import Context from '../../contexts/context';
 import s from './Modal.module.css';
 
 export default function Modal() {
-  const { setShowModal, showModal } = useContext(Context);
+  const { setShowModal, showModal, language } = useContext(Context);
   const styles = {
     nav: {
       maxWidth: '1200px',

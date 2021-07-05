@@ -1,16 +1,23 @@
+import { useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import Container from '../../components/Container';
 import s from './ContactsInfoView.module.css';
 import { Instagram, Facebook, Youtube, Mail, Phone } from 'react-feather';
 import { Icon, InlineIcon } from '@iconify/react';
 import soundcloudIcon from '@iconify-icons/mdi/soundcloud';
+import Context from '../../contexts/context';
 
 function ContactsInfoView(props) {
+  const { language, setLanguage } = useContext(Context);
   const shouldShowH1 = props.location.pathname === '/contact-info';
   return (
     <Container>
-      {shouldShowH1 && <h1 className={s.Name}>Contacts</h1>}
-
+      {shouldShowH1 && language === 'eng' && (
+        <h1 className={s.Name}>Contacts</h1>
+      )}
+      {shouldShowH1 && language === 'ukr' && (
+        <h1 className={s.Name}>Контакти</h1>
+      )}
       <div className={s.ContactsContainer}>
         <a href="mailto:artknownuntist@gmail.com" className={s.ContactsLink}>
           <Mail className={s.ContactsIcon} />
