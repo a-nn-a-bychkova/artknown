@@ -5,3 +5,37 @@
   background-color: white;
   z-index: 2;
 }
+.Nav {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-right: 15px; */
+}
+.Link {
+  /* display: none; */
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px;
+  font-weight: 700;
+  color: #2a363b;
+}
+
+.Link:hover,
+Link:focus {
+  color: #008080;
+}
+.ActiveLink {
+  color: #008080;
+}
+.LanguageContainer {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 700;
+  font-weight: 700;
+  color: #2a363b;
+}

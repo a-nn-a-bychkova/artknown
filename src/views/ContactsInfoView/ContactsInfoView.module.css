@@ -1,5 +1,5 @@
 .Name {
-  font-family: 'Big Shoulders Display';
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 30px;
@@ -22,7 +22,7 @@
   align-items: center;
 }
 .ContactsLink {
-  font-family: 'Big Shoulders Display';
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 700;
   margin-top: 15px;
   display: flex;

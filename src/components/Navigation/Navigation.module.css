@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
 .Link {
   display: none;
   text-decoration: none;
-  padding: 12;
+  margin-right: 30px;
+  padding: 12px;
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 700;
   color: #2a363b;
 }
@@ -13,15 +15,21 @@
 }
 .LinkLogo {
   display: inline-block;
+  /* margin-right: 50px; */
 }
 .Logo {
   max-width: 200px;
 }
 .Text {
-  font-family: 'Big Shoulders Display';
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 700;
   text-transform: uppercase;
 }
+.TextUkr {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* @media screen and(min-width:480px) {
   .Text {
     font-family: 'Big Shoulders Display';
@@ -40,11 +48,12 @@
   transition: 1s;
 }
 
-.nav {
-  max-width: 100%;
+.Nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
   /* padding-right:15px */
 }
 

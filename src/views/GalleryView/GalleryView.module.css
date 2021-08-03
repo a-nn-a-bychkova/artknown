@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .Item {
     margin-right: 15px;
   }
@@ -33,6 +33,15 @@
     margin-right: 15px;
   }
   .Item:nth-child(3n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Item:nth-child(3n) {
+    margin-right: 15px;
+  }
+  .Item:nth-child(4n) {
     margin-right: 0px;
   }
 }

@@ -8,7 +8,7 @@ import Context from '../../contexts/context';
 export default function HomeView(props) {
   const { language, setLanguage } = useContext(Context);
   useEffect(() => {
-    console.log('HomeView language', language);
+    // console.log('HomeView language', language);
   }, []);
   return (
     <Container>

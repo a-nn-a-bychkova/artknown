@@ -1,0 +1,13 @@
+.List {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Item {
+  font-family: 'Yanone Kaffeesatz';
+}
+@media screen and (min-width: 480px) {
+  .Item {
+    font-weight: 700;
+  }
+}

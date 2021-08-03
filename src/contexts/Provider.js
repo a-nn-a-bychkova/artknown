@@ -5,7 +5,7 @@ export default function Provider({ children }) {
   const [language, setLanguage] = useState('eng');
 
   useEffect(() => {
-    console.log('language in Context', language);
+    // console.log('language in Context', language);
   }, [showModal, language]);
 
   const providerValue = useMemo(() => {

@@ -1,0 +1,9 @@
+.Button {
+  font-family: 'Yanone Kaffeesatz';
+  width: 30px;
+}
+
+.Button:hover,
+.Button:focus {
+  color: teal;
+}

@@ -9,7 +9,7 @@
   list-style-type: none;
 }
 .ListName {
-  font-family: Big Shoulders Display;
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 10px;
@@ -19,13 +19,13 @@
   max-width: 90%;
 }
 .MemberName {
-  font-family: Big Shoulders Display;
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 5px;
 }
 .Musician {
-  font-family: Big Shoulders Display;
+  font-family: 'Yanone Kaffeesatz';
   font-weight: 400;
   margin-top: 0px;
   margin-bottom: 5px;
