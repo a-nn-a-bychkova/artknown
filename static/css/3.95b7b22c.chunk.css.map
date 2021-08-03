@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/Modal/Modal.module.css"],"names":[],"mappings":"AAAA,wBACE,cAAe,CACf,UAAW,CACX,WAAY,CACZ,qBAAuB,CACvB,SACF","file":"3.95b7b22c.chunk.css","sourcesContent":[".ModalMenu {\r\n  position: fixed;\r\n  width: 100%;\r\n  height: 100%;\r\n  background-color: white;\r\n  z-index: 2;\r\n}\r\n"]}
