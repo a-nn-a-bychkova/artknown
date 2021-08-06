@@ -21,7 +21,11 @@ function App(props) {
 
   const shouldShowFooter = props.location.pathname !== '/contact-info';
   useEffect(() => {
-    setLanguage(window.localStorage.getItem('language'));
+    if (window.localStorage.getItem('language') === null) {
+      return;
+    } else {
+      setLanguage(window.localStorage.getItem('language'));
+    }
   }, [setLanguage]);
 
   return (
