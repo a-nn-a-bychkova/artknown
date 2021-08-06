@@ -6,8 +6,9 @@ import Modal from '../components/Modal';
 import Footer from './Footer';
 import LoaderBlur from '../components/LoaderBlur';
 import Context from '../contexts/context';
+import HomeView from '../views/HomeView';
+// import VideoView from '../views/VideoView';
 
-const HomeView = lazy(() => import('../views/HomeView'));
 const EventsView = lazy(() => import('../views/EventsView'));
 const NewsView = lazy(() => import('../views/NewsView'));
 const GalleryView = lazy(() => import('../views/GalleryView'));
@@ -16,10 +17,12 @@ const VideoView = lazy(() => import('../views/VideoView'));
 // const Modal = lazy(() => import('../components/Modal'));
 
 function App(props) {
-  const { showModal } = useContext(Context);
+  const { showModal, setLanguage } = useContext(Context);
 
   const shouldShowFooter = props.location.pathname !== '/contact-info';
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setLanguage(window.localStorage.getItem('language'));
+  }, [setLanguage]);
 
   return (
     <Container>

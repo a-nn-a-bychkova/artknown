@@ -21,29 +21,67 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.MemberImg {
+
+.MemberCard {
+  position: relative;
   max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.MemberImg {
+  max-width: 100%;
+  text-align: center;
+}
+.NameContainer {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: rgba(
+    119,
+    100,
+    100,
+    0.527
+  ); /* Black background with transparency */
+  color: #f1f1f1;
+  width: 100%;
+  height: 15%;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poiret One';
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 .MemberName {
-  font-family: 'Poiret One';
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 5px;
+  position: absolute;
+  content: '';
+  font-size: 18px;
+  width: 100%;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0 auto;
 }
-.Musician {
-  font-family: 'Poiret One';
-  font-weight: 400;
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
+
 @media screen and (min-width: 480px) {
   .Hero {
     max-width: 100%;
   }
 }
 
-@media screen and(min-width:1024px) {
-  .MemberImg {
-    max-width: 70%;
+@media screen and (min-width: 768px) {
+  .NameContainer {
+    height: 10%;
+  }
+  .MemberName {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .MemberCard {
+    max-width: 1024px;
   }
 }

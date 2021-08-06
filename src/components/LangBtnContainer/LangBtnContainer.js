@@ -8,8 +8,10 @@ export default function LangBtnContainer() {
   const changeLanguage = e => {
     if (e.target.innerText === 'eng') {
       setLanguage('eng');
+      window.localStorage.setItem('language', 'eng');
     } else if (e.target.innerText === 'укр') {
       setLanguage('ukr');
+      window.localStorage.setItem('language', 'ukr');
     }
   };
 

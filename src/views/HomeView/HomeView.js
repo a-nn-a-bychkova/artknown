@@ -12,28 +12,40 @@ export default function HomeView(props) {
   }, []);
   return (
     <Container>
-      <h1 className={s.Name}>ARTKNOWN UNTIST</h1>
+      {/* <h1 className={s.Name}>ARTKNOWN UNTIST</h1> */}
       <img src={artknown} alt="ARTKNOWN UNTIST" className={s.Hero} />
       {language === 'eng' && <h1 className={s.ListName}>Members</h1>}
       {language === 'ukr' && <h1 className={s.ListName}>Команда</h1>}
       <ul className={s.Ul}>
         <li className={s.Li}>
-          {language === 'eng' && (
-            <h2 className={s.MemberName}>Eugene Yakovenko (vocal, guitar)</h2>
-          )}
-          {language === 'ukr' && (
-            <h2 className={s.MemberName}>Євген Яковенко (вокал, гітара)</h2>
-          )}
-          <img src={Eugene} alt="Eugene" className={s.MemberImg} />
+          <div className={s.MemberCard}>
+            <img src={Eugene} alt="Eugene" className={s.MemberImg} />
+            <div className={s.NameContainer}>
+              {language === 'eng' && (
+                <h2 className={s.MemberName}>
+                  Eugene Yakovenko (vocal, guitar)
+                </h2>
+              )}
+              {language === 'ukr' && (
+                <h2 className={s.MemberName}>Євген Яковенко (вокал, гітара)</h2>
+              )}
+            </div>
+          </div>
         </li>
         <li className={s.Li}>
-          {language === 'eng' && (
-            <h2 className={s.MemberName}>Eugene Yakovenko (vocal, guitar)</h2>
-          )}
-          {language === 'ukr' && (
-            <h2 className={s.MemberName}>Євген Яковенко (вокал, гітара)</h2>
-          )}
-          <img src={Eugene} alt="Eugene" className={s.MemberImg} />
+          <div className={s.MemberCard}>
+            <img src={Eugene} alt="Eugene" className={s.MemberImg} />
+            <div className={s.NameContainer}>
+              {language === 'eng' && (
+                <h2 className={s.MemberName}>
+                  Eugene Yakovenko (vocal, guitar)
+                </h2>
+              )}
+              {language === 'ukr' && (
+                <h2 className={s.MemberName}>Євген Яковенко (вокал, гітара)</h2>
+              )}
+            </div>
+          </div>
         </li>
       </ul>
     </Container>
