@@ -1,4 +1,3 @@
-import Container from '../../components/Container';
 import example from '../../images/example-image.jpg';
 import s from './GalleryView.module.css';
 

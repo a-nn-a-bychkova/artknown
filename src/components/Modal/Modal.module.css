@@ -15,7 +15,7 @@
 }
 .Link {
   /* display: none; */
-  font-family: 'Yanone Kaffeesatz';
+  font-family: 'Poiret One';
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -34,8 +34,51 @@ Link:focus {
 .LanguageContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Yanone Kaffeesatz';
+  font-family: 'Poiret One';
   font-weight: 700;
   font-weight: 700;
   color: #2a363b;
+}
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+}
+.Button {
+  font-family: 'Poiret One';
+  font-weight: 700;
+  font-size: 12px;
+  width: 30px;
+  border: 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.ButtonActive {
+  font-family: 'Poiret One';
+  font-weight: 700;
+  font-size: 12px;
+  width: 30px;
+  border: 1px solid teal;
+  border-radius: 30px;
+  color: teal;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.Button:hover,
+.Button:focus {
+  color: teal;
+  border-color: teal;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .ModalMenu {
+    display: none;
+  }
+  .ButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80px;
+  }
 }

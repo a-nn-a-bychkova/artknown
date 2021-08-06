@@ -3,12 +3,12 @@ import { withRouter } from 'react-router-dom';
 import Container from '../../components/Container';
 import s from './ContactsInfoView.module.css';
 import { Instagram, Facebook, Youtube, Mail, Phone } from 'react-feather';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import soundcloudIcon from '@iconify-icons/mdi/soundcloud';
 import Context from '../../contexts/context';
 
 function ContactsInfoView(props) {
-  const { language, setLanguage } = useContext(Context);
+  const { language } = useContext(Context);
   const shouldShowH1 = props.location.pathname === '/contact-info';
   return (
     <Container>

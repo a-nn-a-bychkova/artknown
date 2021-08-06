@@ -1,15 +1,25 @@
 import { NavLink } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import Context from '../../contexts/context';
 import s from './Modal.module.css';
-import LanguageBtn from '../LanguageBtn';
 
 export default function Modal() {
-  const { setShowModal, showModal, language } = useContext(Context);
+  const { setShowModal, showModal, language, setLanguage } =
+    useContext(Context);
+
+  const changeLanguage = e => {
+    if (e.target.innerText === 'eng') {
+      setLanguage('eng');
+    } else if (e.target.innerText === 'укр') {
+      setLanguage('ukr');
+    }
+  };
   const toggleModal = e => {
     console.log(showModal);
     setShowModal(!showModal);
   };
+  useEffect(() => {}, [setLanguage]);
+
   return (
     <>
       {showModal && (
@@ -23,7 +33,7 @@ export default function Modal() {
               onClick={toggleModal}
             >
               {language === 'eng' && <span className={s.Text}>Events</span>}
-              {language === 'ukr' && <span className={s.TextUkr}>Події</span>}
+              {language === 'ukr' && <span className={s.Text}>Події</span>}
             </NavLink>
             <NavLink
               to="/news"
@@ -33,7 +43,7 @@ export default function Modal() {
               onClick={toggleModal}
             >
               {language === 'eng' && <span className={s.Text}>News</span>}
-              {language === 'ukr' && <span className={s.TextUkr}>Новини</span>}
+              {language === 'ukr' && <span className={s.Text}>Новини</span>}
             </NavLink>
             <NavLink
               to="/video"
@@ -43,7 +53,7 @@ export default function Modal() {
               onClick={toggleModal}
             >
               {language === 'eng' && <span className={s.Text}>Videos</span>}
-              {language === 'ukr' && <span className={s.TextUkr}>Відео</span>}
+              {language === 'ukr' && <span className={s.Text}>Відео</span>}
             </NavLink>
             <NavLink
               to="/gallery"
@@ -53,7 +63,7 @@ export default function Modal() {
               onClick={toggleModal}
             >
               {language === 'eng' && <span className={s.Text}>Gallery</span>}
-              {language === 'ukr' && <span className={s.TextUkr}>Галерея</span>}
+              {language === 'ukr' && <span className={s.Text}>Галерея</span>}
             </NavLink>
             <NavLink
               to="/contact-info"
@@ -63,14 +73,22 @@ export default function Modal() {
               onClick={toggleModal}
             >
               {language === 'eng' && <span className={s.Text}>Contacts</span>}
-              {language === 'ukr' && (
-                <span className={s.TextUkr}>Контакти</span>
-              )}
+              {language === 'ukr' && <span className={s.Text}>Контакти</span>}
             </NavLink>
 
-            <div className={s.LanguageContainer}>
-              <LanguageBtn text="ENG" className={s.Text} />
-              <LanguageBtn text="УКР" className={s.Text} />
+            <div className={s.ButtonContainer}>
+              <div
+                onClick={changeLanguage}
+                className={language === 'eng' ? s.ButtonActive : s.Button}
+              >
+                eng
+              </div>
+              <div
+                onClick={changeLanguage}
+                className={language === 'ukr' ? s.ButtonActive : s.Button}
+              >
+                укр
+              </div>
             </div>
           </nav>
         </div>

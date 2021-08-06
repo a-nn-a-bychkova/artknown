@@ -10,7 +10,7 @@
   max-width: 300px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .List {
     display: flex;
     flex-wrap: wrap;
@@ -21,23 +21,17 @@
     margin-bottom: 15px;
   }
   .Item:nth-child(2n) {
-    margin-right: 0px;
+    margin-right: 15px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .Item {
-    margin-right: 15px;
-  }
-  .Item:nth-child(2n) {
-    margin-right: 15px;
-  }
+@media screen and (min-width: 1024px) {
   .Item:nth-child(3n) {
     margin-right: 0px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .Item:nth-child(3n) {
     margin-right: 15px;
   }

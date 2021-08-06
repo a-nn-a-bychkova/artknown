@@ -1,5 +1,5 @@
 import { Switch, Route, withRouter } from 'react-router-dom';
-import { useContext, useState, useEffect, lazy, Suspense } from 'react';
+import { useContext, useEffect, lazy, Suspense } from 'react';
 import Container from './Container';
 import AppBar from './AppBar';
 import Modal from '../components/Modal';
@@ -16,12 +16,10 @@ const VideoView = lazy(() => import('../views/VideoView'));
 // const Modal = lazy(() => import('../components/Modal'));
 
 function App(props) {
-  const { showModal, language, setLanguage } = useContext(Context);
-  // const [language, setLanguage] = useState('eng');
+  const { showModal } = useContext(Context);
+
   const shouldShowFooter = props.location.pathname !== '/contact-info';
-  useEffect(() => {
-    // console.log('App UseEffect language', setLanguage);
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <Container>

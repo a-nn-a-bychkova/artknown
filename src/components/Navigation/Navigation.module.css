@@ -1,17 +1,19 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 .Link {
   display: none;
   text-decoration: none;
-  margin-right: 30px;
   padding: 12px;
-  font-family: 'Yanone Kaffeesatz';
+  font-family: 'Poiret One';
   font-weight: 700;
   color: #2a363b;
 }
+.ActiveLink,
 .Link:hover,
 .Link:focus {
   color: #008080;
+  cursor: pointer;
 }
 .LinkLogo {
   display: inline-block;
@@ -21,27 +23,11 @@
   max-width: 200px;
 }
 .Text {
-  font-family: 'Yanone Kaffeesatz';
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.TextUkr {
+  font-family: 'Poiret One';
   font-weight: 700;
   text-transform: uppercase;
 }
 
-/* @media screen and(min-width:480px) {
-  .Text {
-    font-family: 'Big Shoulders Display';
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-}
-@media screen and(min-width:768) {
-  .Text {
-    font-weight: 700;
-  }
-} */
 .Text:hover,
 .Text:focus {
   color: #008080;
@@ -57,8 +43,13 @@
   /* padding-right:15px */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .Link {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Nav {
+    max-width: 800px;
   }
 }

@@ -1,4 +1,3 @@
-import Container from '../../components/Container';
 import s from './VideoView.module.css';
 export default function VideoView() {
   return (

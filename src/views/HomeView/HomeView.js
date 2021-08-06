@@ -6,13 +6,13 @@ import Eugene from '../../images/Eugene.jpg';
 import Context from '../../contexts/context';
 
 export default function HomeView(props) {
-  const { language, setLanguage } = useContext(Context);
+  const { language } = useContext(Context);
   useEffect(() => {
     // console.log('HomeView language', language);
   }, []);
   return (
     <Container>
-      {/* <h1 className={s.Name}>artknown untist</h1> */}
+      <h1 className={s.Name}>ARTKNOWN UNTIST</h1>
       <img src={artknown} alt="ARTKNOWN UNTIST" className={s.Hero} />
       {language === 'eng' && <h1 className={s.ListName}>Members</h1>}
       {language === 'ukr' && <h1 className={s.ListName}>Команда</h1>}
