@@ -32,10 +32,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .Item:nth-child(3n) {
-    margin-right: 15px;
-  }
-  .Item:nth-child(4n) {
-    margin-right: 0px;
+  .List {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
