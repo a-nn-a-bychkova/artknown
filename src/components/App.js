@@ -6,9 +6,9 @@ import Modal from '../components/Modal';
 import Footer from './Footer';
 import LoaderBlur from '../components/LoaderBlur';
 import Context from '../contexts/context';
-import HomeView from '../views/HomeView';
+// import HomeView from '../views/HomeView';
 // import VideoView from '../views/VideoView';
-
+const HomeView = lazy(() => import('../views/HomeView'));
 const EventsView = lazy(() => import('../views/EventsView'));
 const NewsView = lazy(() => import('../views/NewsView'));
 const GalleryView = lazy(() => import('../views/GalleryView'));
@@ -32,10 +32,11 @@ function App(props) {
     <Container>
       <AppBar />
       {showModal && <Modal />}
-
-      <Modal />
       <Switch>
         <Suspense fallback={<LoaderBlur />}>
+          <Route path="/artknown" exact>
+            <HomeView />
+          </Route>
           <Route path="/events" exact>
             <EventsView />
           </Route>
@@ -50,9 +51,6 @@ function App(props) {
           </Route>
           <Route path="/contact-info">
             <ContactsInfoView />
-          </Route>
-          <Route path="/" exact>
-            <HomeView />
           </Route>
         </Suspense>
       </Switch>

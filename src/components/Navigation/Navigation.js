@@ -13,7 +13,7 @@ const Navigation = () => {
 
   return (
     <nav className={s.Nav}>
-      <NavLink to="/" exact className={s.LinkLogo}>
+      <NavLink to="/artknown" exact className={s.LinkLogo}>
         <img src={Logo} alt="ARTKNOWN UNTIST" className={s.Logo} />
       </NavLink>
       <MenuBtn className={s.MenuBtn} />
