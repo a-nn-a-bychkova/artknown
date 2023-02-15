@@ -67,6 +67,7 @@
 
 @media screen and (min-width: 480px) {
   .Hero {
+    margin: 0;
     max-width: 100%;
   }
 }

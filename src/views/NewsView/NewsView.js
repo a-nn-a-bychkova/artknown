@@ -1,17 +1,34 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import newsUkr from '../../db.json';
 import s from './NewsView.module.css';
+import Context from '../../contexts/context';
 
 export default function NewsView() {
-  useEffect(() => {
-    console.log('news db', newsUkr);
-  }, []);
+  const { language } = useContext(Context);
+
   return (
     <ul className={s.List}>
-      {newsUkr.map(({ id, name, date }) => (
+      {newsUkr.map(({ id, name, nameUkr, date, city, cityUkr }) => (
         <li key={id} className={s.Item}>
           <p>
-            {date} : {name}
+            {date} :
+            {language === 'eng' ? (
+              <span>
+                {name}
+                {city ? <div>{city}</div> : ''}
+              </span>
+            ) : (
+              <span>
+                {nameUkr ? <span> {nameUkr}</span> : <span>{name}</span>}
+                {cityUkr ? (
+                  <div>{cityUkr}</div>
+                ) : city ? (
+                  <div>{city} </div>
+                ) : (
+                  ''
+                )}
+              </span>
+            )}
           </p>
         </li>
       ))}
