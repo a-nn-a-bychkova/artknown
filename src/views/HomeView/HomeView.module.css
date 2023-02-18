@@ -1,88 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-.Name {
-  font-family: 'Poiret One';
-  font-size: 14px;
-  font-weight: 700;
-}
+
 .Hero {
-  margin-top: 20px;
-  max-width: 90%;
-}
-
-.Ul {
-  margin: 0px;
-  padding: 0px 0px 10px 0px;
-  list-style-type: none;
-}
-.ListName {
-  font-family: 'Poiret One';
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.MemberCard {
-  position: relative;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.MemberImg {
   max-width: 100%;
-  text-align: center;
-}
-.NameContainer {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  background: rgba(
-    119,
-    100,
-    100,
-    0.527
-  ); /* Black background with transparency */
-  color: #f1f1f1;
-  width: 100%;
-  height: 15%;
-  align-items: center;
-  text-align: center;
-  font-family: 'Poiret One';
-  font-weight: 400;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
-.MemberName {
-  position: absolute;
-  content: '';
-  font-size: 18px;
-  width: 100%;
-  top: 15%;
-  left: 0;
-  right: 0;
-  margin: 0 auto 0 auto;
+  margin-bottom: -4px;
 }
 
 @media screen and (min-width: 480px) {
   .Hero {
-    margin: 0;
-    max-width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .NameContainer {
-    height: 10%;
-  }
-  .MemberName {
-    font-size: 24px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .MemberCard {
-    max-width: 1024px;
+    max-width: 88%;
   }
 }

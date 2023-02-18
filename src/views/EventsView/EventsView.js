@@ -16,8 +16,8 @@ export default function EventsView() {
     {
       text: 'School Pub 28.05.2021',
       img: schoolpubImage,
-      width: '300px',
-      height: '200px',
+      width: '500px',
+      height: '300px',
     },
     {
       text: 'Fazenda 01.05.2021',
@@ -28,7 +28,7 @@ export default function EventsView() {
     {
       text: 'Heisenberg 14.02.2021',
       img: heisenbergImage,
-      width: '450px',
+      width: '350px',
       height: '300px',
     },
   ];

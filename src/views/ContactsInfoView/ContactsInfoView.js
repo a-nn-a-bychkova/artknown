@@ -34,9 +34,9 @@ function ContactsInfoView(props) {
             <Instagram className={s.Icon} />
           </a>
         </li>
-        <li className={s.li}>
+        {/* <li className={s.li}>
           <Facebook className={s.Icon} />
-        </li>
+        </li> */}
 
         <li className={s.li}>
           <a href="https://youtube.com/channel/UCr-gXA_l6iFG-njz-ZghNhA">
