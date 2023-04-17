@@ -1,0 +1,2 @@
+(this.webpackJsonpartknown=this.webpackJsonpartknown||[]).push([[5],{71:function(t,e,n){t.exports={Hero:"HomeView_Hero__fTlcG"}},82:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return p}));var a=n(0),r=n(15),c=n(71),s=n.n(c),i=n.p+"static/media/gene-with-guitar.5a38054a.jpg",o=n(8),u=n(1);function p(t){Object(a.useContext)(o.a).language;return Object(u.jsx)(r.a,{children:Object(u.jsx)("img",{src:i,alt:"ARTKNOWN UNTIST",className:s.a.Hero})})}}}]);
+//# sourceMappingURL=5.037e4cc4.chunk.js.map
