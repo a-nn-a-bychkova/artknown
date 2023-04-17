@@ -10,7 +10,7 @@ export default function NewsView() {
     <ul className={s.List}>
       {newsUkr.map(({ id, name, nameUkr, date, city, cityUkr }) => (
         <li key={id} className={s.Item}>
-          <p>
+          <div>
             {date} :
             {language === 'eng' ? (
               <span>
@@ -29,7 +29,7 @@ export default function NewsView() {
                 )}
               </span>
             )}
-          </p>
+          </div>
         </li>
       ))}
     </ul>

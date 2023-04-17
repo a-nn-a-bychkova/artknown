@@ -15,10 +15,8 @@ export default function Modal() {
     }
   };
   const toggleModal = e => {
-    console.log(showModal);
     setShowModal(!showModal);
   };
-  useEffect(() => {}, [setLanguage]);
 
   return (
     <>

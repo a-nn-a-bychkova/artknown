@@ -5,7 +5,7 @@
 }
 
 .ImageBig {
-  width: 300px;
+  width: auto;
   max-height: 250px;
   margin-bottom: 15px;
 }
@@ -23,6 +23,7 @@
   list-style-type: none;
 }
 .liImageBig {
+  width: 300px;
   list-style-type: none;
 }
 
@@ -54,11 +55,12 @@
   }
 }
 @media screen and (min-width: 1024px) {
-  .li:nth-child(2n) {
-    margin-right: 15px;
+  .ul {
+    display: flex;
+    justify-content: space-between;
   }
-  .ImageBig {
-    width: 80%;
+  .li:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -66,5 +68,9 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .li {
+    margin-top: 20px;
+    width: 30%;
   }
 }

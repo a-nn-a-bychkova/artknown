@@ -1,5 +1,4 @@
 .ModalMenu {
-  position: fixed;
   width: 100%;
   height: 100%;
   background-color: white;
@@ -16,11 +15,10 @@
 .Link {
   /* display: none; */
   font-family: 'Poiret One';
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
   padding: 12px;
-  font-weight: 700;
   color: #2a363b;
 }
 
@@ -35,7 +33,6 @@ Link:focus {
   display: flex;
   flex-direction: column;
   font-family: 'Poiret One';
-  font-weight: 700;
   font-weight: 700;
   color: #2a363b;
 }

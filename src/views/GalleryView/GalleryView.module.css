@@ -8,6 +8,7 @@
 
 .Img {
   max-width: 300px;
+  height: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,4 +38,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.ModalContainer {
+  display: block;
+  width: auto;
+  height: 300px;
+  background-color: aquamarine;
 }

@@ -2,14 +2,11 @@ import { useContext, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './Navigation.module.css';
 import MenuBtn from '../MenuBtn';
-import Logo from '../../images/Logo-artknown-2.svg';
+import Logo from '../../images/ARTKNOWN-2.svg';
 import Context from '../../contexts/context';
 
 const Navigation = () => {
   const { language } = useContext(Context);
-  useEffect(() => {
-    // console.log('language Navigation', language);
-  }, []);
 
   return (
     <nav className={s.Nav}>

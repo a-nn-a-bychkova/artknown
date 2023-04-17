@@ -1,0 +1,16 @@
+.Img {
+  max-width: 95%;
+  max-height: 600px;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  align-items: center;
+  background: rgba(184, 182, 184, 0.5);
+  height: 100%;
+  width: 100%;
+}
